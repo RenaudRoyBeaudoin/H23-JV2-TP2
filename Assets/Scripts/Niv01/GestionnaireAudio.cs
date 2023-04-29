@@ -17,6 +17,6 @@ public class GestionnaireAudio : MonoBehaviour
     }
 
     public void GererVolEffets(float volume){
-        _audioMixer.SetFloat("VolEffets", volume);
+        _audioMixer.SetFloat("VolEffetsSonores", volume);
     }
 }

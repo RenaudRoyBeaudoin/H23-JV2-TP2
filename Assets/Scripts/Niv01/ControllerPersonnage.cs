@@ -26,8 +26,8 @@ public class ControllerPersonnage : MonoBehaviour
 
     // Variables pour les délais pour faire jouer les bruits de pas
     // À ajouter ici...
-    private float delaiBruitPasCourse = 0.35f;
-    private float delaiBruitPasMarche = 0.5f;
+    private float delaiBruitPasCourse = 0.3f;
+    private float delaiBruitPasMarche = 0.45f;
     private float compteurDeTempsBruitsPas = 0.0f;
 
     //Variables pour gérer la rotation avec la souris
