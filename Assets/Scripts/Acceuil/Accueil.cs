@@ -6,23 +6,13 @@ using TMPro;
 
 public class Accueil : MonoBehaviour
 {
-    
+    [SerializeField] private GestionnaireScene _gestionScenes;
     [SerializeField] InfoJoueur _infoJoueur;
     [SerializeField] InfoNiveau _infoNiveau;
 
     [SerializeField] private TMP_InputField _champNom;
     [SerializeField] private TMP_InputField _champParc;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
      public void PartJeu(){
         if(_champNom.text !=""){
@@ -31,7 +21,7 @@ public class Accueil : MonoBehaviour
 
             _infoNiveau._laNomDuParc = _champParc.text;
             
-            _gestionnaireScene.SceneSuivante();
+            _gestionScenes.SceneSuivante();
     }
      }
 }
