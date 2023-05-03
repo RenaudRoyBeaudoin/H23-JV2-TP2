@@ -16,6 +16,10 @@ public class ControllerPersonnage : MonoBehaviour
     [SerializeField] private AudioClip _sonSaut;
     [SerializeField] private AudioClip _sonTombeAuSol;
     [SerializeField] private AudioClip[] _listeBruitsPas;
+
+    [SerializeField] private AudioClip _sonDechet;
+
+
     private Rigidbody _rb;
     private AudioSource audioSource;
     private bool isGrounded = true;
@@ -143,7 +147,14 @@ public class ControllerPersonnage : MonoBehaviour
             
             _sauter = false;
             }
-            
+        }
+
+        //Fait jouer un son lorsqu'on entre en contact avec un déchet
+        if (collision.gameObject.CompareTag("Dechet")){
+                        
+            audioSource.clip = _sonDechet;
+            audioSource.Play();
+
         }
     }
 

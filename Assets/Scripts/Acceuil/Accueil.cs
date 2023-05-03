@@ -17,11 +17,20 @@ public class Accueil : MonoBehaviour
      public void PartJeu(){
         if(_champNom.text !=""){
 
+
+            //Enregistre le nom du jouer et du parc
             _infoJoueur._nomJoueur = _champNom.text;
 
             _infoNiveau._laNomDuParc = _champParc.text;
+
+
+            //Remet le nombre de point à zéro
+            _infoJoueur._nbPoints = 0;
             
+
+
+            //Passe à la scène suivante
             _gestionScenes.SceneSuivante();
-    }
+        }
      }
 }
