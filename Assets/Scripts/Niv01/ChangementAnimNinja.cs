@@ -49,12 +49,27 @@ public class ChangementAnimNinja : MonoBehaviour
 
 
         if(_distanceAgentCible < 2){
-            _agent.isStopped = true;
-            _animator.SetTrigger("IdleNinja");
+            
+            bool oui = _animator.GetBool("Idle");
+            if(oui== false){
+              _agent.isStopped = true;
+             _animator.SetBool("Idle", true);
+           } 
+           
+            
+            Debug.Log("crap");
+            
         }
         else{
-            _agent.isStopped = false;
-            _animator.SetTrigger("");
+           
+            
+            //Invoke("RepartirAnimNinja", 2);
+           
         }
+    }
+
+    private void RepartirAnimNinja(){
+                _animator.SetBool("Idle", false);   
+             _agent.isStopped = false;
     }
 }
