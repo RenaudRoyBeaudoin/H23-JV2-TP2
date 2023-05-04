@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7375676814049703241}
   - component: {fileID: -4536236030962059826}
   - component: {fileID: -9037671967276826291}
+  - component: {fileID: -1254607535352596418}
   m_Layer: 0
   m_Name: fish_bones
   m_TagString: Dechet
@@ -112,4 +113,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _infoJoueur: {fileID: 11400000, guid: 51493af34e78362409e9e8f59fc765f6, type: 2}
   _nbPoints: 1
-  _sonRamasse: {fileID: 0}
+--- !u!95 &-1254607535352596418
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9032908635997197468}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7005a877d64e874199f6c1d01787b46, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

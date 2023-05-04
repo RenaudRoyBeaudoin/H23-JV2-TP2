@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8485399245826373289}
   - component: {fileID: 3897999970232418030}
   - component: {fileID: 3756579016570403336}
+  - component: {fileID: -4708442241026651462}
   m_Layer: 0
   m_Name: Ice_cream_3
   m_TagString: Dechet
@@ -112,4 +113,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _infoJoueur: {fileID: 11400000, guid: 51493af34e78362409e9e8f59fc765f6, type: 2}
   _nbPoints: 1
-  _sonRamasse: {fileID: 0}
+--- !u!95 &-4708442241026651462
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7981167817895876476}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7005a877d64e874199f6c1d01787b46, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
