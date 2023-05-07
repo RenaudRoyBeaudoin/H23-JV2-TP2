@@ -12,4 +12,6 @@ public string _nomJoueur;
 
 public int _nbPoints;
 
+public int _nbPointsTotals;
+
 }

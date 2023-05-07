@@ -7,7 +7,6 @@ public class Niv01 : MonoBehaviour
 {
    [SerializeField] private InfoJoueur _infoJoueur;
     [SerializeField] private InfoNiveau _infoNiveau;
-
     
     [SerializeField] private TMP_Text _texteNomDuJoueur;
     [SerializeField] private TMP_Text _texteNombreDePoints;
@@ -17,6 +16,7 @@ public class Niv01 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Applique les noms entrés dans la scène d'acceuil
         _texteNomDuJoueur.text = _infoJoueur._nomJoueur;
         _texteNomDuParc.text = _infoNiveau._laNomDuParc;
     }
@@ -27,8 +27,17 @@ public class Niv01 : MonoBehaviour
         VerifiePoints();
     }
     void VerifiePoints(){
-
+        //Applique le nb de points actuels dans le canva
         _texteNombreDePoints.text = _infoJoueur._nbPoints.ToString();
+    }
 
+
+
+
+    //Empêche le joueur de prendre plus que 5 déchêts à la fois
+    private void NbMaxDechets(){
+        if(_infoJoueur._nbPoints == 5){
+
+        }
     }
 }

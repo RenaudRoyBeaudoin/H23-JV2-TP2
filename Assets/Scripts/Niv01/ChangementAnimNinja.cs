@@ -50,7 +50,11 @@ public class ChangementAnimNinja : MonoBehaviour
 
         if(_distanceAgentCible < 2){
             
-            bool oui = _animator.GetBool("Idle");
+            _agent.isStopped = true;
+             _animator.SetBool("Idle", true);
+
+
+            /*bool oui = _animator.GetBool("Idle");
             if(oui== false){
               _agent.isStopped = true;
              _animator.SetBool("Idle", true);
@@ -58,18 +62,19 @@ public class ChangementAnimNinja : MonoBehaviour
            
             
             Debug.Log("crap");
-            
+            */
         }
         else{
-           
+            _animator.SetBool("Idle", false);   
+            _agent.isStopped = false;
             
             //Invoke("RepartirAnimNinja", 2);
            
         }
     }
 
-    private void RepartirAnimNinja(){
-                _animator.SetBool("Idle", false);   
+    /*private void RepartirAnimNinja(){
+            _animator.SetBool("Idle", false);   
              _agent.isStopped = false;
-    }
+    }*/
 }

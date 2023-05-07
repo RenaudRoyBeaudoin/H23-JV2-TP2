@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nomJoueur: 
   _nbPoints: 0
+  _nbPointsTotals: 67

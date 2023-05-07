@@ -39,6 +39,10 @@ public class ControllerPersonnage : MonoBehaviour
     private float deltaRotationY;
 
 
+    //Récupère les infos du joueur
+    [SerializeField] private InfoJoueur _infoJoueur;
+
+
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -148,15 +152,20 @@ public class ControllerPersonnage : MonoBehaviour
             _sauter = false;
             }
         }
-
-        //Fait jouer un son lorsqu'on entre en contact avec un déchet
-        if (collision.gameObject.CompareTag("Dechet")){
-                        
-            audioSource.clip = _sonDechet;
-            audioSource.Play();
+}
+    //Fait jouer un son lorsqu'on entre en contact avec un déchet
+    private void OnTriggerEnter(Collider other){    
+        if (other.gameObject.CompareTag("Dechet")){
+            if(_infoJoueur._nbPoints !< 5){
+                audioSource.clip = _sonDechet;
+                audioSource.Play();
+            }
+            
 
         }
     }
+        
+    
 
     void JouerBruitsDePas()
     {

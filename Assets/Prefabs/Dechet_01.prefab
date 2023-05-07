@@ -39,6 +39,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2304565908597146078}
     m_Modifications:
+    - target: {fileID: -8223210243843965127, guid: b13f627e49d044f148da01a3d1c02326, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2658704093563537020, guid: b13f627e49d044f148da01a3d1c02326, type: 3}
       propertyPath: _sonRamasse
       value: 
