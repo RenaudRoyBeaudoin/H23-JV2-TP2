@@ -160,8 +160,6 @@ public class ControllerPersonnage : MonoBehaviour
                 audioSource.clip = _sonDechet;
                 audioSource.Play();
             }
-            
-
         }
     }
         

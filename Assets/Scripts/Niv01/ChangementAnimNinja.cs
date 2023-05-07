@@ -29,11 +29,11 @@ public class ChangementAnimNinja : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        BougerZombie();
+        BougerPNJ();
     }
 
 
-    void BougerZombie(){
+    void BougerPNJ(){
 
         //position du joueur pour donner une destination à l'agent
         _positionJoueur = _joueur.transform.position;
