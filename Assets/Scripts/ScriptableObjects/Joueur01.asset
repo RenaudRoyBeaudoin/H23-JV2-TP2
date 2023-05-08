@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Joueur01
   m_EditorClassIdentifier: 
   _nomJoueur: 
-  _nbPoints: 0
-  _nbPointsTotals: 67
+  _nbPoints: 5
+  _nbPointsTotals: 204
