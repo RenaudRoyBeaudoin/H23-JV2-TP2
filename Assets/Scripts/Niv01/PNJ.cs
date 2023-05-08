@@ -29,6 +29,8 @@ public class PNJ : MonoBehaviour
     {
         // Récupère le composant Animator
         _animator = GetComponent<Animator>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -95,6 +97,8 @@ public class PNJ : MonoBehaviour
             //Joue un son si le joueur est à moins de 2 mètres
             audioSource.clip = _sonLoser;
             audioSource.Play();
+
+            Debug.Log("crap");
         }
     }
 }

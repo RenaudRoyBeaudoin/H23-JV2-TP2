@@ -10,11 +10,26 @@ public class CollisionDechet : MonoBehaviour
     [SerializeField] private int _nbPoints;
     [SerializeField] private int _nbPointsTotals;
 
+
+    //Vérifie si l'inventaire est plein ou non
+    public bool _estPlein;
+
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        InvEstPlein();
+    }
+
+
+
+
     private void OnTriggerEnter(Collider other){
         if(other.gameObject.tag == "Player"){
 
 
-            if(_infoJoueur._nbPoints !< 5){
+            if(_infoJoueur._nbPoints < 5){
             Debug.Log("collision");
 
             
@@ -29,6 +44,13 @@ public class CollisionDechet : MonoBehaviour
             Destroy(gameObject);
             }
             
+        }
+    }
+
+
+    private void InvEstPlein(){
+         if(_infoJoueur._nbPoints == 5){
+            _estPlein = true;
         }
     }
 }

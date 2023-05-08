@@ -9,6 +9,12 @@ public class RemiseDechets : MonoBehaviour
     [SerializeField] private AudioClip _sonWin;
     private AudioSource audioSource;
 
+
+
+    //Réfère au script CollisionDechet
+    [SerializeField] private CollisionDechet _collisionDechet;
+
+
     void Start()
     {
         
@@ -25,6 +31,8 @@ public class RemiseDechets : MonoBehaviour
 
                 audioSource.clip = _sonWin;
                 audioSource.Play();
+
+                _collisionDechet._estPlein = false;
             }
 
 

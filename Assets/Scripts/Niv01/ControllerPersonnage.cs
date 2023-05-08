@@ -19,6 +19,9 @@ public class ControllerPersonnage : MonoBehaviour
 
     [SerializeField] private AudioClip _sonDechet;
 
+    //Réfère au script CollisionDechet
+    [SerializeField] private CollisionDechet _collisionDechet;
+
 
     private Rigidbody _rb;
     private AudioSource audioSource;
@@ -156,7 +159,7 @@ public class ControllerPersonnage : MonoBehaviour
     //Fait jouer un son lorsqu'on entre en contact avec un déchet
     private void OnTriggerEnter(Collider other){    
         if (other.gameObject.CompareTag("Dechet")){
-            if(_infoJoueur._nbPoints !< 5){
+            if(_collisionDechet._estPlein != true){
                 audioSource.clip = _sonDechet;
                 audioSource.Play();
             }
