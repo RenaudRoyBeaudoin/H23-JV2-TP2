@@ -18,4 +18,12 @@ public class GestionnaireScene : MonoBehaviour
             SceneManager.LoadScene(_sceneIndex + 1);
         }
     }
+
+    public void Accueil(){
+        SceneManager.LoadScene("Acceuil");
+    }
+
+    public void Niv01(){
+        SceneManager.LoadScene("Niv01");
+    }
 }

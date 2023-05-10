@@ -26,6 +26,7 @@ public class Accueil : MonoBehaviour
 
             //Remet le nombre de point à zéro
             _infoJoueur._nbPoints = 0;
+            _infoJoueur._nbPointsTotals = 0;
             
 
 

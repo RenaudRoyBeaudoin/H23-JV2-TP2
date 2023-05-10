@@ -30,14 +30,4 @@ public class Niv01 : MonoBehaviour
         //Applique le nb de points actuels dans le canva
         _texteNombreDePoints.text = _infoJoueur._nbPoints.ToString();
     }
-
-
-
-
-    //Empêche le joueur de prendre plus que 5 déchêts à la fois
-    private void NbMaxDechets(){
-        if(_infoJoueur._nbPoints == 5){
-
-        }
-    }
 }
