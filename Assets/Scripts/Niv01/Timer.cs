@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
 
     [SerializeField] private TMP_Text _timeText;
 
-    [SerializeField] private float _tempsRestant;
+    [SerializeField] public float _tempsRestant;
 
 
     //Vient chercher mon canvas FinDeJeu
