@@ -13,7 +13,7 @@ public class InfoNiveau : ScriptableObject
 
 
 
-    [SerializeField] public int _tempsDeJeu = 60;
+    [SerializeField] public bool _avecEnnemis = true;
 
 
 

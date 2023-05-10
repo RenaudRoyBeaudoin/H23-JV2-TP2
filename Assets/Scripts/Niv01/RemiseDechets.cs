@@ -30,7 +30,7 @@ public class RemiseDechets : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    //Remet le compte de points à 0 sile joueur entre dans la zone de remise avec 5 points
+    //Remet le compte de points à 0 si le joueur entre dans la zone de remise avec 5 points
     private void OnTriggerEnter(Collider other){
         if(other.gameObject.tag == "Player"){
 
