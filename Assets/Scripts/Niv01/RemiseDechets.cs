@@ -5,10 +5,19 @@ using UnityEngine.Audio;
 
 public class RemiseDechets : MonoBehaviour
 {
+    //Référence au script timer
+    [SerializeField] private Timer _timer;
+
+    //Référence à Infojoueur
     [SerializeField] private InfoJoueur _infoJoueur;
+
+    //Référence à l'audioClip
     [SerializeField] private AudioClip _sonWin;
     private AudioSource audioSource;
 
+
+    ///Temps supplémentaire accordé au joueur
+    [SerializeField] private float _tempsSup;
 
 
     //Réfère au script CollisionDechet
@@ -26,6 +35,8 @@ public class RemiseDechets : MonoBehaviour
         if(other.gameObject.tag == "Player"){
 
             if(_infoJoueur._nbPoints == 5){
+
+                _timer._tempsRestant += _tempsSup;
 
                 _infoJoueur._nbPoints = 0;
 

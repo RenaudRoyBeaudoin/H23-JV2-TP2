@@ -39,6 +39,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2375925446903814797}
     m_Modifications:
+    - target: {fileID: 762013189179600219, guid: bf164eafe19c14e8bb630326cf894a86, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3757551710666505286, guid: bf164eafe19c14e8bb630326cf894a86, type: 3}
       propertyPath: m_Name
       value: burger (1)
