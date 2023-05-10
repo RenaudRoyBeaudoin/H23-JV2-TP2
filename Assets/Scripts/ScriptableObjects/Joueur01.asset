@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b5562f269e8f941a5ecfb77f49a0e8, type: 3}
   m_Name: Joueur01
   m_EditorClassIdentifier: 
-  _nomJoueur: jhjh
+  _nomJoueur: 
   _nbPoints: 0
   _nbPointsTotals: 0
