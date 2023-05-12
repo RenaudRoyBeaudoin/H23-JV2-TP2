@@ -44,6 +44,8 @@ public class PNJ : MonoBehaviour
         [SerializeField] private float _distanceMax;
 
 
+    //Vient chercher mon canvas TempsPerdu
+        [SerializeField] private GameObject _tempsPerdu;
 
     void Start()
     {
@@ -104,8 +106,24 @@ public class PNJ : MonoBehaviour
 
             Debug.Log("crap");
 
-            //Fait perdre 2 secondes au joueur s'il entre en contact
-            _timer._tempsRestant -= 2;
+            //Fait perdre 2 secondes au joueur s'il entre en contact et affiche le temps perdu
+            _timer._tempsRestant -= 3;
+
+            ApparaitreEtDisparaitreTempsPerdu();
         }
+    }
+
+
+
+
+    //Fait apparaitre le canvas tempsPerdu et le fait disparaitre dans 1 seconde
+    private void ApparaitreEtDisparaitreTempsPerdu(){
+        _tempsPerdu.SetActive(true);
+
+        Invoke("DisparaitreTempsPerdu", 1);
+    }
+    
+    private void DisparaitreTempsPerdu(){
+        _tempsPerdu.SetActive(false);
     }
 }
